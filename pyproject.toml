@@ -1,0 +1,37 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=65.5.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "restoration-bot"
+version = "0.1.0"
+description = "A program that helps with data restoration."
+readme = "README.md"
+authors = [
+	{ name = "Brian Pond", email = "brian@datahenge.com" },
+	{ name = "Emmanuel Omolola", email = "mmanuelmiles@gmail.com" }
+]
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "click ~= 8.1.7",
+    "semantic-version ~= 2.10.0",
+    "tomli-w",
+    "tomli",
+    "paramiko",
+    "scp"
+]
+
+[project.optional-dependencies]
+development = ["pylint", "twine"]
+
+
+[project.scripts]
+backup = "backup_bot.cli:entry_point"
+bbot = "backup_bot.cli:entry_point"
+backupcopy = "backup_bot.cli:entry_point"
