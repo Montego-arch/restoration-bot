@@ -32,6 +32,4 @@ development = ["pylint", "twine"]
 
 
 [project.scripts]
-backup = "backup_bot.cli:entry_point"
-bbot = "backup_bot.cli:entry_point"
-backupcopy = "backup_bot.cli:entry_point"
+python restoration_bot/cli.py --config path/to/config.toml
