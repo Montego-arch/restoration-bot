@@ -11,6 +11,6 @@ def validate_datatype(argument_name, argument_value, expected_type, mandatory=Fa
         raise ValueError(f"Argument '{argument_name}' should be of type '{expected_type.__name__}'"
                          f"but found '{type(argument_value).__name__}' with value '{argument_value}'.")
     
-    
+            
     return argument_value
     

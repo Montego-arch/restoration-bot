@@ -1,0 +1,2 @@
+[console_scripts]
+restoration_bot = restoration_bot.cli:entry_point

@@ -1,5 +1,5 @@
 import toml
-
+      
 def load_config(config_path):
     try:
         return toml.load(config_path)

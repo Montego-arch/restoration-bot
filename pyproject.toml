@@ -24,7 +24,9 @@ dependencies = [
     "tomli-w",
     "tomli",
     "paramiko",
-    "scp"
+    "scp",
+    "mysql-connector-python",
+    "toml"
 ]
 
 [project.optional-dependencies]
@@ -32,4 +34,4 @@ development = ["pylint", "twine"]
 
 
 [project.scripts]
-python restoration_bot/cli.py --config path/to/config.toml
+restoration_bot = "restoration_bot.cli:entry_point"

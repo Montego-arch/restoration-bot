@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: restoration-bot
+Version: 0.1.0
+Summary: A program that helps with data restoration.
+Author-email: Brian Pond <brian@datahenge.com>, Emmanuel Omolola <mmanuelmiles@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: click~=8.1.7
+Requires-Dist: semantic-version~=2.10.0
+Requires-Dist: tomli-w
+Requires-Dist: tomli
+Requires-Dist: paramiko
+Requires-Dist: scp
+Requires-Dist: mysql-connector-python
+Requires-Dist: toml
+Provides-Extra: development
+Requires-Dist: pylint; extra == "development"
+Requires-Dist: twine; extra == "development"
+
+
+# Restoration Bot
+
+## Overview
+Restoration Bot is a Python application designed to manage SQL database restoration from backups, ensuring effective storage management and logging.
+
+## Requirements
+- Python 3.10 or higher
+- Install dependencies with `pip install -r requirements.txt`
+
+## Usage
+To run the application, use the following command:
+
+```bash
+python -m restoration_bot.cli --config path/to/your/config.toml

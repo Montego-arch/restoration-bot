@@ -1,0 +1,12 @@
+click~=8.1.7
+semantic-version~=2.10.0
+tomli-w
+tomli
+paramiko
+scp
+mysql-connector-python
+toml
+
+[development]
+pylint
+twine
